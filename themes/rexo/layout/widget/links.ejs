@@ -1,0 +1,26 @@
+<% if (site.posts.length) { %>
+    <div >
+        <div >
+            <ul>
+                <% 
+
+                for (var i in theme.miscellaneous.links) { 
+                    <!-- console.log("theme.miscellaneous.links[i]: " + JSON.stringify(theme.miscellaneous.links[i])) -->
+
+                    var name = theme.miscellaneous.links[i]["link"][0]
+                    var url = theme.miscellaneous.links[i]["link"][1]
+                    var emoji = theme.miscellaneous.links[i]["link"][2]
+
+                    %>
+                    <li >
+
+                         <div class="tooltip">
+                            <a class="side-link" href="<%- url %>"><%= emoji %></a>
+                            <span class="tooltiptext"><%- name %></span>
+                        </div> 
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+<% } else { console.log("posts.length = 0")} %>

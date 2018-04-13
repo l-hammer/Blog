@@ -1,0 +1,15 @@
+/* normal */
+@font-face {
+    font-family: 'Amariya';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Amariya'), local(''), url(fonts/Monotype-Amariya-Regular.ttf) format('truetype');
+}
+
+/* light */
+@font-face {
+    font-family: 'Amariya-ExtraLight';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Amariya'), local(''), url(fonts/Monotype-Amariya-ExtraLight.ttf) format('truetype');
+}

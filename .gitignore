@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.log
+.vscode/
+/.deploy_git
+/public  
+/_config.yml
+/db.json
+/.idea/workspace.xml

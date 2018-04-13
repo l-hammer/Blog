@@ -1,0 +1,29 @@
+
+<% if (theme.customize.sidebar) { %>
+    <div class="sidebar box-right">
+      <%- partial('sidebar', null, {cache: !config.relative_link}) %>
+    </div>
+<% } %>  
+
+<main class="app-body">
+
+    <% page.posts.each(function(post) { %>
+    <article class="article-card" dir="<%- post.direction %>">
+      <h2 class="article-head">
+        <a href="<%- url_for(post.path) %>"><%- post.title %></a>
+      </h2>
+      <% if (post.tags && post.tags.length) { %>
+        <%- partial('_partial/tag', { tags: post.tags }) %>
+      <% } %>
+      <p class="article-date"><%- date(post.date, "LL") %></p>
+
+    </article>
+  <% }) %>
+
+
+
+  <% if (page.total > 1){ %>
+    <%- partial('_partial/pager') %>
+  <% } %>
+</main>
+

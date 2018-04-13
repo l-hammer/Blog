@@ -1,0 +1,7 @@
+/* normal */
+@font-face {
+    font-family: 'Baraem';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Baraem'), local('OpenSans'), url(fonts/bahij-baraem-regular.woff) format('woff2');
+}

@@ -1,0 +1,45 @@
+index:
+    home: 'الرئيسية'
+    search: 'بحث'
+    archive: 'الأرشيف'
+    category: 'القسم'
+    uncategorized: 'غير مصنف'
+    tag: 'تاگ'
+nav:
+    next: 'القادم'
+    prev: 'السابق'
+    older: 'القديم'
+    newer: 'الجديد'
+widget:
+    recents: 'الأحدث'
+    archives: 'الأرشيف'
+    categories: 'الأقسام'
+    links: 'الروابط'
+    tags: 'التاگ'
+    tag_cloud: 'تاگ سحابي'
+article:
+    more: 'المزيد'
+    comments: 'التعليقات'
+    share: 'مشاركة'
+    catalogue: 'الكتلوك'
+profile:
+    follow: 'متابعة'
+    post: 'منشور'
+    tag: 'تاگ'
+    posts: 'المنشورات'
+    tags: 'التاگات'
+insight:
+    hint: 'كلمة البحث...'
+    posts: 'المقالات'
+    pages: 'الصفحات'
+    categories: 'الاقسام'
+    tags: 'التاگات'
+    untitled: 'مجهول'
+links:
+    archive: الأرشيف
+words:
+    tags: التاگات
+    powered_by: مبني على 
+    hexo: هيكسو
+    projects: المشاريع
+    archive: الأرشيف
