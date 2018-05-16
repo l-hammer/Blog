@@ -4,12 +4,12 @@
 
 <main class="app-body">
   <article class="post-article">
-    <section class="markdown-content"   dir="<%- page.direction %>"><%- page.content %></section>
+    <section class="markdown-content"><%- page.content %></section>
     
     <p class="post-date" dir="<%- page.direction %>"><%- date(page.date, "LL") %></p>
 
     <% if (page.tags && page.tags.length) { %>
-      <div class="tags"    dir="<%- page.direction %>">
+      <div class="tags" dir="<%- page.direction %>">
         <%- partial('_partial/tag', { tags: page.tags }) %>
       </div>
     <% } %>

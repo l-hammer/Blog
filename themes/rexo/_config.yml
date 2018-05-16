@@ -1,15 +1,18 @@
-author: blueMix
-description: مدونة عبد المؤمن
+# Site
+title: Hexo
+author: LHammer
+description: LHammer's Blog
 keywords: hexo-theme, rexo, rtl, multilingual
+language: zh-CN
 
 theme_name: Rexo
 theme_url: https://github.com/bluemix/hexo-theme-rexo
 
 menu:
 #  🏠: /
-#  🏷: /tags/
+ 🏷: /tags/
 #  📗: /archives/
-#  💻: /projects/
+ 📟: /projects/
 #  🏞: /photography/
  👨🏻‍💻: /about/
 
@@ -31,29 +34,34 @@ about:
 social:
   github: https://github.com/l-hammer
   github_username: LHammer
-  掘金: https://juejin.im/user/57a3dbb2d342d300574d8369
+  juejin: https://juejin.im/user/57a3dbb2d342d300574d8369
+  juejin_username: LHammer
+  twitter: https://twitter.com/lhammer_
+  twitter_username: LHammer
+  email: lhammering@gmail.com
+  weixin: weixin-huiwu
 
 # Customize
 customize:
     sidebar: right # sidebar position, options: left, right or leave it empty
 
-miscellaneous:
-    links:
-      - link:
-        - Archive | الأرشيف
-        - /archives/
-        - 📗
-      - link: 
-        - Quotes | حكم
-        - /quotes/
-        - 📝
-      - link: 
-        - Songs & Music | موسيقى و أغاني
-        - /music
-        - 🎵
-      - link: 
-        - Inspired by | أشخاص أحبهم
-        - /inspired
-        - 💖
+# miscellaneous:
+#     links:
+#       - link:
+#         - Archive | الأرشيف
+#         - /archives/
+#         - 📗
+#       - link: 
+#         - Quotes | حكم
+#         - /quotes/
+#         - 📝
+#       - link: 
+#         - Songs & Music | موسيقى و أغاني
+#         - /music
+#         - 🎵
+#       - link: 
+#         - Inspired by | أشخاص أحبهم
+#         - /inspired
+#         - 💖
 
 

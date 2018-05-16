@@ -8,7 +8,7 @@
 
   <center>
     <table >
-      <tr>
+      <!-- <tr>
         <td align="right">عبد المؤمن كاظم</td>
         <td align="left">AbdElmomen Kadhim</td>
       </tr>
@@ -23,7 +23,7 @@
       <tr>
         <td align="right">إقرأ</td>
         <td align="left">Read</td>
-      </tr>
+      </tr> -->
       <tr>
         <td colspan="2" align="center"><%- theme.about.description %></td>
       </tr>
@@ -34,53 +34,49 @@
   <section class="share-icons">
 
     <% if (theme.social.github) { %>
-      <a class="icon-github" href="<%- theme.social.github %>" target="_blank">
+      <a href="<%- theme.social.github %>" target="_blank">
         <span class="fa-stack fa">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+          <!-- <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-github fa-stack-1x fa-inverse"></i> -->
+          <i class="iconfont icon-github1"></i>
         </span>
       </a>
     <% } %>
-    <% if (theme.social.stackoverflow) { %>
-      <a class="icon-stackoverflow" href="<%- theme.social.stackoverflow %>" target="_blank">
+    <% if (theme.social.juejin) { %>
+      <a href="<%- theme.social.juejin %>" target="_blank">
         <span class="fa-stack fa">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-stack-overflow fa-stack-1x fa-inverse"></i>
+          <i class="iconfont icon-juejin"></i>
         </span>
       </a>
     <% } %>
     <% if (theme.social.twitter) { %>
-      <a class="icon-twitter" href="<%- theme.social.twitter %>" target="_blank">
+      <a href="<%- theme.social.twitter %>" target="_blank">
         <span class="fa-stack fa">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+          <i class="iconfont icon-twitter1"></i>
         </span>
       </a>
     <% } %>
-    <% if (theme.social.facebook) { %>
-      <a class="icon-facebook" href="<%- theme.social.facebook %>" target="_blank">
+    <% if (theme.social.weixin) { %>
+      <a href="javascript:void(0);" class="cell poptip--top" aria-controls="<%- theme.social.weixin %>" target="_blank">
         <span class="fa-stack fa">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+          <i class="iconfont icon-xiangmulan-weixinhao"></i>
         </span>
       </a>
     <% } %>
-     <% if (theme.social.instagram) { %>
-      <a class="icon-instagram" href="<%- theme.social.instagram %>" target="_blank">
+    <% if (theme.social.weibo) { %>
+      <a href="<%- theme.social.weibo %>" target="_blank">
         <span class="fa-stack fa">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+          <i class="iconfont icon-weibo1"></i>
         </span>
       </a>
-    <% } %> 
-     <% if (theme.social.linkedin) { %>
-      <a class="icon-linkedin" href="<%- theme.social.linkedin %>" target="_blank">
+    <% } %>
+    <% if (theme.social.email) { %>
+      <a href="javascript:void(0);" class="cell poptip--top" aria-controls="<%- theme.social.email %>" target="_blank">
         <span class="fa-stack fa">
-          <i class="fa fa-circle fa-stack-2x"></i>
-          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+          <i class="iconfont icon-youxiang1"></i>
         </span>
       </a>
-    <% } %> 
+    <% } %>
   </section>
 </div>
 

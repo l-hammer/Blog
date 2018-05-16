@@ -35,3 +35,8 @@ insight:
     categories: '分类'
     tags: '标签'
     untitled: '(未命名)'
+words:
+    tags: Tags
+    powered_by: LHammer
+    hexo: Hexo
+    projects: Projects

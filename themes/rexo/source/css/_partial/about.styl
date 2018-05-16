@@ -20,7 +20,6 @@
 .author
   margin-top: -50px
   width: 100%
-  background: color-background
   text-align: center
   padding: 0 1em 30px 1em
   box-sizing: border-box
@@ -81,3 +80,98 @@
       color: #1178B3
     .icon-stackoverflow
       color: #F28033
+
+.iconfont
+  font-size: 20px
+  &.icon-github1
+    color: #333333
+  &.icon-juejin
+    color: #007fff
+  &.icon-twitter1
+    color: #2aa9e0
+  &.icon-xiangmulan-weixinhao
+    color: #55b737
+  &.icon-youxiang1
+    color: #f28033
+
+.cell {
+  position: relative;
+}
+.cell.empty {
+  background: transparent;
+  cursor: default;
+  pointer-events: none;
+}
+.cell:not(:nth-of-type(3n)) {
+  margin-bottom: 12px;
+}
+.cell:hover {
+  color: #42b983;
+  font-weight: 900;
+}
+.cell[class*=poptip--]::before, .cell[class*=poptip--]::after {
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(0,0,0);
+  transition: all .3s ease .05s;
+}
+.cell[class*=poptip--]:hover::before, .cell[class*=poptip--]:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+.cell[class*=poptip--]::before {
+  content: '';
+  position: absolute;
+  width: 0; height: 0;
+  border: 6px solid transparent;
+}
+.cell[class*=poptip--]::after {
+  content: attr(aria-controls);
+  position: absolute;
+  background: #42b983;
+  font-size: 12px;
+  font-weight: normal;
+  color: white;
+  line-height: 12px;
+  padding: 3px 12px;
+  white-space: nowrap;
+  border-radius: 2px;
+  box-shadow: 0px 0px 3px #42b983;
+}
+.cell[class*=poptip--top]::before {
+  border-top-color: inherit;
+}
+.cell[class*=poptip--top]::before, .cell[class*=poptip--bottom]::before {
+  left: calc(50% - 6px);
+}
+.cell[class*=poptip--top]::after, .cell[class*=poptip--bottom]::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cell[class*=poptip--top]::before {
+  top: 0px;
+}
+.cell[class*=poptip--top]:hover::before {
+  transform: translateX(0%) translateY(-10px);
+}
+.cell[class*=poptip--top]::after {
+  bottom: 100%;
+  margin-bottom: -1px;
+}
+.cell[class*=poptip--top]:hover::after {
+  transform: translateX(-50%) translateY(-10px);
+}
+.cell[aria-controls="weixin-huiwu"] {
+  color: #55b737;
+}
+.cell[aria-controls="weixin-huiwu"]::after {
+  background: #55b737;
+  box-shadow: 0px 0px 3px #55b737;
+}
+.cell[aria-controls="lhammering@gmail.com"] {
+  color: #f28033;
+}
+.cell[aria-controls="lhammering@gmail.com"]::after {
+  background: #f28033;
+  box-shadow: 0px 0px 3px #f28033;
+}
