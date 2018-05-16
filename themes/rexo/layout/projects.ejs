@@ -2,7 +2,58 @@
   <h2><%- __('words.projects') %></h2>
 </div>
 <main class="app-body project-app">
+  <h2 class="title">开源项目</h2>
   <div class="card-container" id="all-project"></div>
+  <h2 class="title">工作项目</h2>
+  <section class="markdown-content project-section">
+    <blockquote>
+    <p>2017-</p>
+    </blockquote>
+    <h3>年会签到</h3>
+    <!-- <h5>An e-commerce app that allows government employees to shop by installments and order them at the specefied date and time.</h5> -->
+    <img src="https://github.com/l-hammer/someworks/raw/master/yearSign/uis/page-1.jpg" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/raw/master/yearSign/uis/page-2.jpg" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/raw/master/yearSign/uis/page-3.jpg" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/raw/master/yearSign/uis/page-4.jpg" width="160" title="">
+    <center>🔸</center>
+    项目地址：<a href="https://github.com/l-hammer/someworks/tree/master/yearSign" target="_blank">GitHub</a>
+    <hr>
+    <h3>年货超市</h3>
+    <!-- <h5>An e-commerce app that allows government employees to shop by installments and order them at the specefied date and time.</h5> -->
+    <img src="https://github.com/l-hammer/someworks/raw/master/newYearMarket/uis/page-1.jpg" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/raw/master/newYearMarket/uis/page-2.jpg" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/raw/master/newYearMarket/uis/page-3.jpg" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/raw/master/newYearMarket/uis/page-4.jpg" width="160" title="">
+    <center>🔸</center>
+    项目地址：<a href="https://github.com/l-hammer/someworks/tree/master/newYearMarket" target="_blank">GitHub</a>
+    <hr>
+    <h3>公司年报</h3>
+    <!-- <h5>An e-commerce app that allows government employees to shop by installments and order them at the specefied date and time.</h5> -->
+    <img src="https://github.com/l-hammer/someworks/raw/master/report2017App/uis/page-3.png" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/raw/master/report2017App/uis/page-8.png" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/raw/master/report2017App/uis/page-9.png" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/raw/master/report2017App/uis/page-10.png" width="160" title="">
+    <center>🔸</center>
+    项目地址：<a href="https://github.com/l-hammer/someworks/tree/master/report2017App" target="_blank">GitHub</a>
+    <hr>
+    <h3>百亿红包</h3>
+    <!-- <h5>An e-commerce app that allows government employees to shop by installments and order them at the specefied date and time.</h5> -->
+    <img src="https://github.com/l-hammer/someworks/blob/master/tenBillionRedPacket/uis/page-1.jpeg?raw=true" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/blob/master/tenBillionRedPacket/uis/page-2.jpeg?raw=true" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/blob/master/tenBillionRedPacket/uis/page-3.jpeg?raw=true" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/blob/master/tenBillionRedPacket/uis/page-4.jpeg?raw=true" width="160" title="">
+    <center>🔸</center>
+    项目地址：<a href="https://github.com/l-hammer/someworks/tree/master/tenBillionRedPacket" target="_blank">GitHub</a>
+    <hr>
+    <h3>升温助力</h3>
+    <!-- <h5>An e-commerce app that allows government employees to shop by installments and order them at the specefied date and time.</h5> -->
+    <img src="https://github.com/l-hammer/someworks/blob/master/riseSeason/uis/page-1.jpeg?raw=true" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/blob/master/riseSeason/uis/page-2.jpeg?raw=true" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/blob/master/riseSeason/uis/page-3.jpeg?raw=true" width="160" title="">
+    <img src="https://github.com/l-hammer/someworks/blob/master/riseSeason/uis/page-4.jpeg?raw=true" width="160" title="">
+    <center>🔸</center>
+    项目地址：<a href="https://github.com/l-hammer/someworks/tree/master/riseSeason" target="_blank">GitHub</a>
+  </section>
 </main>
 <script>
   (function() {
@@ -20,23 +71,26 @@
           return (b.stargazers_count - a.stargazers_count)
         }).slice(0, 6)
         var cardHtml = repos.map(function(item) {
-          var description = item.description
-          if (description.replace(/[\u0391-\uFFE5]/g, "aa").length > 72) {
-            description = description.slice(0, 72) + '...'
+          console.log(item)
+          if (item.id === 112713457 || item.id === 116384288 || item.id === 132079548) {
+            var description = item.description
+            if (description.replace(/[\u0391-\uFFE5]/g, "aa").length > 72) {
+              description = description.slice(0, 72) + '...'
+            }
+            return (
+              '<section class="project-card">' + 
+                '<a class="card-wrap" href="'+ item.html_url +'" target="_blank">' +
+                  '<div class="card-header" data-name="'+ item.name +'"></div>' +
+                  '<h3 class="card-title">' + item.name + '</h3>' +
+                  '<p class="card-description">' + description + '</p>' +
+                  '<div class="card-footer">' +
+                    '<span><i class="iconfont icon-star1"></i>'+ item.stargazers_count +'</span>' +
+                    '<span><i class="iconfont icon-fork3"></i>' + item.forks_count +'</span>' +
+                  '</div>' +
+                '</a>' +
+              '</section>'
+            )
           }
-          return (
-            '<section class="project-card">' + 
-              '<a class="card-wrap" href="'+ item.html_url +'" target="_blank">' +
-                '<div class="card-header" data-name="'+ item.name +'"></div>' +
-                '<h3 class="card-title">' + item.name + '</h3>' +
-                '<p class="card-description">' + description + '</p>' +
-                '<div class="card-footer">' +
-                  '<span><i class="fa fa-star"></i>'+ item.stargazers_count +'</span>' +
-                  '<span><i class="fa fa-code-fork"></i>' + item.forks_count +'</span>' +
-                '</div>' +
-              '</a>' +
-            '</section>'
-          )
         }).join('')
         $('#all-project').html(cardHtml)
         $('.card-header').each(function() {

@@ -1,5 +1,5 @@
 # Site
-title: Hexo
+title: LHammer's Blog
 author: LHammer
 description: LHammer's Blog
 keywords: hexo-theme, rexo, rtl, multilingual
@@ -33,7 +33,7 @@ about:
   long_description:
 social:
   github: https://github.com/l-hammer
-  github_username: LHammer
+  github_username: l-hammer
   juejin: https://juejin.im/user/57a3dbb2d342d300574d8369
   juejin_username: LHammer
   twitter: https://twitter.com/lhammer_
