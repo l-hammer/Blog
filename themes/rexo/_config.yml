@@ -5,6 +5,7 @@ description: LHammer's Blog
 keywords: hexo-theme, rexo, rtl, multilingual
 language: zh-CN
 
+url: https://lhammer.cn
 theme_name: Rexo
 theme_url: https://github.com/bluemix/hexo-theme-rexo
 
@@ -25,7 +26,7 @@ comment:
     disqus: https-l-hammer-github-io
 
 
-# google_analytics: UA-104099189-1
+google_analytics: UA-119770326-1
 
 about: 
   avatar: https://avatars2.githubusercontent.com/u/27677988?s=460&v=4
