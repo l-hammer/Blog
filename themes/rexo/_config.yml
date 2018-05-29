@@ -4,6 +4,7 @@ author: LHammer
 description: LHammer's Blog
 keywords: hexo-theme, rexo, rtl, multilingual
 language: zh-CN
+favicon: /css/images/favicon.ico
 
 url: https://lhammer.cn
 theme_name: Rexo
